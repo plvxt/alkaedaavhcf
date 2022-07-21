@@ -11,9 +11,9 @@
 
 
 
-URL: "https://discord.com/api/webhooks/846146547162284072/FzTT-g2w27RTk77JCRHiPGK0wy9Em3L95lcpSP9rkq_PdrBhcPQbPjwnB7KYWlmBfh0E"
+URL: "https://discord.com/api/webhooks/"
 kits:
-  menu.name: '&9Blaze Kits'
+  menu.name: '&9alkaedaav Kits'
   item.slot.empty: '160:8'
   item.kit.lore:
     - ''
