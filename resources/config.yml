@@ -20,10 +20,10 @@ kits:
     - '&6Cooldown: &7{kit_cooldown}'
     - '&6Your cooldown: &7{player_cooldown}'
 MySQL:
-  hostname: "sql102.web8.cf:3306"
-  username: "wb8c_32205016"
-  password: "brian2007"
-  database: "wb8c_32205016_bry"
+  hostname: "host"
+  username: "username"
+  password: "password"
+  database: "db"
   port: 3306
 Global:
 Cooldowns:
