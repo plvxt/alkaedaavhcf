@@ -1,0 +1,46 @@
+---
+#         _ _                  _                   
+#        | | |                | |                  
+#    __ _| | | ____ _  ___  __| | __ _  __ ___   __
+#   / _` | | |/ / _` |/ _ \/ _` |/ _` |/ _` \ \ / /
+#  | (_| | |   < (_| |  __/ (_| | (_| | (_| |\ V / 
+#  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
+#
+#               Plugin by alkaedaav
+#             Discord: alkaedaav#9877
+#            Edited for: Blaze Network                                      
+
+
+
+scoreboard_name: "&l&6Blaze&r&f | &8HCF"
+StormBreaker: "&e&lStormBreaker&r&f: &7{time} "
+AntiTrapper: "&a&lAntiTrapper&r&f: &7{time} "
+Bard: "&6&lZombieBard&r&f: &7{time} "
+RogueItem: "&d&lRogue Sword&r&f: &7{time} "
+Berserk: "&c&lBerserk&r&f: &7{time} "
+EggPort: "&b&lEggPort&r&f: &7{time} "
+SpecialItem: "&l&dPartner Item&r&f: &7{time} "
+NinjaShear: "&l&6NinjaShear&r&f: &7{time} "
+PotionCounter: "&l&6PotionCounter&r&f: &7{time} "
+EnderPearl: "&9&lEnderPearl&r&f: &7{time} "
+CombatTag: "&c&lCombatTag&r&f: &7{time} "
+Apple: "&6&lApple&r&f: &7{time} "
+Logout: "&9&lLogout&r&f: &7{time} "
+Home: "&b&lHome&r&f: &7{time} "
+Stuck: "&4&lStuck&r&f: &7{time} "
+SOTW: "&a&lSOTW ends in&r&f: &7{time} "
+EOTW: "&e&lEOTW ends in&r&f: &7{time} "
+KOTH: "&l&9{kothName}&r&f: &7{time} "
+SALE: "&6&lSotw Sale ends in&r&f: &7{time}"
+PP: "&l&dPP All in&r&f: &7{time} "
+Airdrop: "&l&bAirdrop all in&r&f: &7{time} "
+Invincibility: "&d&lInvincibility&r&f: &7{time} "
+BardEnergy: "&b&lBardEnergy&r&f: &c{bardEnergy}.0"
+ArcherEnergy: "&d&lArcherEnergy&r&f: &c{archerEnergy}.0"
+MageEnergy: "&d&lMageEnergy&r&f: &c{mageEnergy}.0"
+factionFocus: [ 
+  "&l&bTeam&r&8: &l&f{factionName} ", 
+  "&l&bHq&r&8: &l&f{factionHome} ", 
+  "&l&bDTR&r&8: &l&f{factionDTR} ", 
+  "&l&bOnline&r&8: &l&f{factionOnlinePlayers} ", 
+]

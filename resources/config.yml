@@ -1,0 +1,58 @@
+#         _ _                  _                   
+#        | | |                | |                  
+#    __ _| | | ____ _  ___  __| | __ _  __ ___   __
+#   / _` | | |/ / _` |/ _ \/ _` |/ _` |/ _` \ \ / /
+#  | (_| | |   < (_| |  __/ (_| | (_| | (_| |\ V / 
+#  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
+#
+#               Plugin by alkaedaav
+#             Discord: alkaedaav#9877
+#            Edited for: Blaze Network                                      
+
+
+
+URL: "https://discord.com/api/webhooks/846146547162284072/FzTT-g2w27RTk77JCRHiPGK0wy9Em3L95lcpSP9rkq_PdrBhcPQbPjwnB7KYWlmBfh0E"
+kits:
+  menu.name: '&9Blaze Kits'
+  item.slot.empty: '160:8'
+  item.kit.lore:
+    - ''
+    - '&6Cooldown: &7{kit_cooldown}'
+    - '&6Your cooldown: &7{player_cooldown}'
+MySQL:
+  hostname: "sql102.web8.cf:3306"
+  username: "wb8c_32205016"
+  password: "brian2007"
+  database: "wb8c_32205016_bry"
+  port: 3306
+Global:
+Cooldowns:
+  EnderPearl: 15
+  CombatTag: 30
+  ArcherTag: 10
+  LoggerBait: 30
+  Apple: 15
+  EggPort: 15
+  SpecialItem: 15
+  StormBreaker: 120
+  Bard: 120
+  RogueItem: 15
+  Berserk: 120
+  NinjaShear: 120
+  PotionCounter: 90
+  AntiTrapper: 120
+  AntiTrapperTarget: 20
+  Home: 25
+  Stuck: 35
+  Logout: 30
+FactionsConfig:
+  maxPlayers: 8
+  SpreadWater: true
+  BorderLimit: 2000
+  Wilderness: 400
+LevelManager:
+  EntitySpawnDelay: 400
+  levelEndName: "End"
+  levelNetherName: "Nether"
+block_ids: ["119:0", "120:0"]
+items_id: ["46:0", "259:0, 2257:0"]

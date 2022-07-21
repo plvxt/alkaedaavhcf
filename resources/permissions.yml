@@ -1,0 +1,184 @@
+#         _ _                  _                   
+#        | | |                | |                  
+#    __ _| | | ____ _  ___  __| | __ _  __ ___   __
+#   / _` | | |/ / _` |/ _ \/ _` |/ _` |/ _` \ \ / /
+#  | (_| | |   < (_| |  __/ (_| | (_| | (_| |\ V / 
+#  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
+#
+#               Plugin by alkaedaav
+#             Discord: alkaedaav#9877
+#            Edited for: Blaze Network                                      
+
+
+# This file is useless, instead use "PurePerms"
+
+
+
+Mod: 
+- "pocketmine.command.teleport"
+- "gamemode.command.use"
+- "pocketmine.command.say"
+- "faction.command.use"
+- "ban.command.use"
+- "clear.command.use"
+- "freeze.command.use"
+- "gip.command.use"
+- "kick.command.use"
+- "mute.command.use"
+- "report.command.use"
+- "sc.command.use"
+- "tban.command.use"
+- "unban.command.use"
+- "unfreeze.command.use"
+- "unmute.command.use"
+- "fixall.command.use"
+- "staffmode.command.use"
+- "view.staff.event"
+- "expire.chat.command"
+- "rb.command.use"
+- "view.anticheat.use"
+- "youtuber.command.use"
+- "rogue.kit"
+- "alias.command.use"
+- "banlist.command.use"
+- "warn.command.use"
+- "viewprivate.command.use"
+- "history.command.use"
+- "setdtr.command.use"
+- "forcedisband.command.use"
+- "setbalance.command.use"
+- "co.command.use"
+- "archer.kit"
+- "use.egg.item"
+- "feed.command.use"
+- "rankset.command.use"
+- "keater.kit"
+- "free.kit"
+- "mod.command.use"
+
+Trainee: 
+- "pocketmine.command.teleport"
+- "gamemode.command.use"
+- "pocketmine.command.say"
+- "clear.command.use"
+- "freeze.command.use"
+- "gip.command.use"
+- "kick.command.use"
+- "mute.command.use"
+- "report.command.use"
+- "sc.command.use"
+- "unban.command.use"
+- "unfreeze.command.use"
+- "unmute.command.use"
+- "tban.command.use"
+- "fixall.command.use"
+- "staffmode.command.use"
+- "view.staff.event"
+- "expire.chat.command"
+- "view.anticheat.use"
+- "youtuber.command.use"
+- "alias.command.use"
+- "banlist.command.use"
+- "warn.command.use"
+- "history.command.use"
+- "co.command.use"
+- "archer.kit"
+- "use.egg.item"
+- "feed.command.use"
+- "keater.kit"
+- "free.kit"
+- "mod.command.use"
+
+Monster: 
+- "free.kit"
+- 
+- "opbard.kit"
+- 
+- "fixall.command.use"
+- "rename.command.use"
+- "venus.reclaim"
+
+alkaedaavhcfHero: 
+- "free.kit"
+- 
+- "opbard.kit"
+- "archer.kit"
+- 
+- "fixhand.command.use"
+- "fixallother.command.use"
+- "feed.command.use"
+- "rename.command.use"
+- "mercury.reclaim"
+
+MiniYT: 
+- "free.kit"
+- "venus.reclaim"
+- 
+- "opbard.kit"
+- 
+- "feed.command.use"
+- "rename.command.use"
+
+Twitch: 
+- "free.kit"
+- 
+- "opbard.kit"
+- "keater.kit"
+- "archer.kit"
+- 
+- "fixhand.command.use"
+- "near.command.use"
+- "fixallother.command.use"
+- "feed.command.use"
+- "rename.command.use"
+- "saturn.reclaim"
+
+YouTuber: 
+- "free.kit"
+- 
+- "opbard.kit"
+- "keater.kit"
+- "archer.kit"
+- "saturn.reclaim"
+- 
+- "fixhand.command.use"
+- "near.command.use"
+- "fixallother.command.use"
+- "feed.command.use"
+- "rename.command.use"
+
+Partner: 
+- "free.kit"
+- 
+- "moon.kit"
+- "opbard.kit"
+- "archer.kit"
+- "rogue.kit"
+- "Blaze.kit"
+- "Blaze.reclaim"
+- 
+- "expire.chat.command"
+- 
+- "cenchantments.command.use"
+- "autofeed.command.use"
+- "fixall.command.use"
+- "fixallother.command.use"
+- "endplayers.command.use"
+- "netherplayers.command.use"
+- "fixhand.command.use"
+- "feed.command.use"
+- "rename.command.use"
+- "craft.command.use"
+- "near.command.use"
+
+NitroBooster: 
+- "free.kit"
+- 
+- "archer.kit"
+- "opbard.kit"
+- "saturn.reclaim"
+- 
+- "fixhand.command.use"
+- "feed.command.use"
+- "rename.command.use"
+- "fixall.command.use"
