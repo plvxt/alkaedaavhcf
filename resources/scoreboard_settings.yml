@@ -7,40 +7,40 @@
 #  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
 #
 #               Plugin by alkaedaav
-#             Discord: alkaedaav#9877
-#            Edited for: Blaze Network                                      
+#             Discord: alkaedaav#9877                            
 
 
 
-scoreboard_name: "&l&6Blaze&r&f | &8HCF"
-StormBreaker: "&e&lStormBreaker&r&f: &7{time} "
-AntiTrapper: "&a&lAntiTrapper&r&f: &7{time} "
-Bard: "&6&lZombieBard&r&f: &7{time} "
-RogueItem: "&d&lRogue Sword&r&f: &7{time} "
-Berserk: "&c&lBerserk&r&f: &7{time} "
-EggPort: "&b&lEggPort&r&f: &7{time} "
-SpecialItem: "&l&dPartner Item&r&f: &7{time} "
-NinjaShear: "&l&6NinjaShear&r&f: &7{time} "
-PotionCounter: "&l&6PotionCounter&r&f: &7{time} "
-EnderPearl: "&9&lEnderPearl&r&f: &7{time} "
-CombatTag: "&c&lCombatTag&r&f: &7{time} "
-Apple: "&6&lApple&r&f: &7{time} "
-Logout: "&9&lLogout&r&f: &7{time} "
-Home: "&b&lHome&r&f: &7{time} "
-Stuck: "&4&lStuck&r&f: &7{time} "
-SOTW: "&a&lSOTW ends in&r&f: &7{time} "
-EOTW: "&e&lEOTW ends in&r&f: &7{time} "
-KOTH: "&l&9{kothName}&r&f: &7{time} "
-SALE: "&6&lSotw Sale ends in&r&f: &7{time}"
-PP: "&l&dPP All in&r&f: &7{time} "
-Airdrop: "&l&bAirdrop all in&r&f: &7{time} "
-Invincibility: "&d&lInvincibility&r&f: &7{time} "
-BardEnergy: "&b&lBardEnergy&r&f: &c{bardEnergy}.0"
-ArcherEnergy: "&d&lArcherEnergy&r&f: &c{archerEnergy}.0"
-MageEnergy: "&d&lMageEnergy&r&f: &c{mageEnergy}.0"
+server_ip: "lunaria.gq:19012"
+scoreb_lines: "" # 15 lines recommended
+StormBreaker: "&5&lStormBreaker&8» &r&7{time} "
+AntiTrapper: "&5&lAntiTrapper&8» &r&7{time} "
+Bard: "&5&lZombieBard&8» &r&7{time} "
+RogueItem: "&5&lRogue Sword&8» &r&7{time} "
+Berserk: "&5&lBerserk&8» &r&7{time} "
+EggPort: "&5&lEggPort&8» &r&7{time} "
+SpecialItem: "&l&5Partner Item&8» &r&7{time} "
+NinjaShear: "&l&5NinjaShear&8» &r&7{time} "
+PotionCounter: "&l&5PotionCounter&8» &r&7{time} "
+EnderPearl: "&5&lEnderPearl&8» &r&7{time} "
+CombatTag: "&5&lCombatTag&8» &r&7{time} "
+Apple: "&5&lApple&8» &r&7{time} "
+Logout: "&5&lLogout&8» &r&7{time} "
+Home: "&5&lHome&8» &r&7{time} "
+Stuck: "&5&lStuck&8» &r&7{time} "
+SOTW: "&5&lSOTW&8» &r&7{time} "
+EOTW: "&5&lEOTW&8» &r&7{time} "
+KOTH: "&l&5{kothName}&8» &r&7{time} "
+SALE: "&5&lRestart&8» &r&7{time}"
+PP: "&l&5PP All in&8» &r&7{time} "
+Airdrop: "&l&5Airdrop all in&8» &r&7{time} "
+Invincibility: "&5&lPvP Timer&8» &r&7{time} "
+BardEnergy: "&5&lBardEnergy&8» &r&c{bardEnergy} "
+ArcherEnergy: "&5&lArcherEnergy&8» &r&c{archerEnergy} "
+MageEnergy: "&5&lMageEnergy&8» &r&c{mageEnergy} "
 factionFocus: [ 
-  "&l&bTeam&r&8: &l&f{factionName} ", 
-  "&l&bHq&r&8: &l&f{factionHome} ", 
-  "&l&bDTR&r&8: &l&f{factionDTR} ", 
-  "&l&bOnline&r&8: &l&f{factionOnlinePlayers} ", 
+  "&l&5Faction&8» &r&7{factionName} ", 
+  "&l&5Focus HQ&8» &r&7{factionHome} ", 
+  "&l&5DTR&8» &r&7{factionDTR} ", 
+  "&l&5Online&8» &r&7{factionOnlinePlayers} ", 
 ]

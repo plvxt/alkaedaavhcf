@@ -41,6 +41,7 @@ class Scoreboard extends Task {
         if(Factions::isSpawnRegion($player)) $player->setFood(20);
 
         $config = Loader::getConfiguration("scoreboard_settings");
+        $globalcfg = Loader::getConfiguration("config");
         $api = Loader::getScoreboard();
         /** @var array[] */
         $scoreboard = [];
@@ -122,12 +123,12 @@ class Scoreboard extends Task {
         }
               $claim = TE::RED.$player->getRegion();
         if($player->getRegion() === Factions::getFaction($player->getName())){
-          $claim = TE::GREEN.$player->getRegion();
+          $claim = TE::LIGHT_PURPLE.$player->getRegion();
         }
         if($player->getRegion() === "Spawn"){
-          $claim = TE::GREEN.$player->getRegion();
+          $claim = TE::LIGHT_PURPLE.$player->getRegion();
         }
-        $scoreboard[] = TE::AQUA.TE::BOLD."Claim".TE::GRAY.": ".$claim;
+        $scoreboard[] = TE::DARK_PURPLE.TE::BOLD."HQ".TE::DARK_GRAY."» ".$claim;
         
         if($player->isFocus()){
             if(!Factions::isFactionExists($player->getFocusFaction())) $player->setFocus(false);
@@ -136,18 +137,19 @@ class Scoreboard extends Task {
             }
         }
         if(count($scoreboard) >= 1){
-            $scoreboard[] = TE::GRAY."";
-            $texting = [TE::GRAY.TE::GRAY."" . TE::RESET];
-      	  $scoreboard = array_merge($texting, $scoreboard);
+            $scoreboard[] = TE::GRAY. $config->get("scoreb_lines");
+            $texting = [TE::GRAY.TE::GRAY. $config->get("scoreb_lines") . TE::RESET];
+			$network = [TE::DARK_PURPLE.TE::BOLD. "IP" . TE::DARK_GRAY . "» " . TE::RESET . TE::GRAY . $config->get("server_ip") . TE::RESET];
+      	  $scoreboard = array_merge($texting, $network, $scoreboard);
         }else{
         	$api->removePrimary($player);
         	return;
         }
-        $api->newScoreboard($player, $player->getName(), str_replace(["&"], ["§"], $config->get("scoreboard_name")));
+        $api->newScoreboard($player, $player->getName(), str_replace(["&"], ["§"], $globalcfg->get("server_name") . "&r&8 | &7[Map &r&7" . $globalcfg->get("map_number") . "&r&7]&r"));
         if($api->getObjectiveName($player) !== null){
             foreach($scoreboard as $line => $key){
                 $api->remove($player, $scoreboard);
-                $api->newScoreboard($player, $player->getName(), str_replace(["&"], ["§"], $config->get("scoreboard_name")));
+                $api->newScoreboard($player, $player->getName(), str_replace(["&"], ["§"], $globalcfg->get("server_name") . "&r&8 | &7[Map &r&7" . $globalcfg->get("map_number") . "&r&7]&r"));
             }
         }
         foreach($scoreboard as $line => $key){
