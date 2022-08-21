@@ -8,7 +8,7 @@ use pocketmine\Server;
 use pocketmine\utils\Config;
 
 use alkaedaav\provider\{
-    SQLite3Provider, YamlProvider, MysqlProvider,
+    SQLite3Provider, YamlProvider,
 };
 use alkaedaav\player\{
     Player,
@@ -62,9 +62,9 @@ class Loader extends PluginBase {
      * @return void
      */
     public function onEnable() : void {
-        MysqlProvider::connect();
-        SQLite3Provider::connect();
-        $msg = <<<TAG
+                $msg = <<<TAG
+        
+       
 		 _ _                  _                   
         | | |                | |                  
     __ _| | | ____ _  ___  __| | __ _  __ ___   __
@@ -74,20 +74,30 @@ class Loader extends PluginBase {
 
                Plugin by alkaedaav
              Discord: alkaedaav#9877
-            Edited for: Blaze Network     
+  Version: 1.1 - Github: nmoralesFZ/alkaedaavhcf
                                                                 
 TAG;
         $this->getLogger()->info($msg);
+        SQLite3Provider::connect();
+        $this->getServer()->getLogger()->notice("SQLite3 is working!");
         Listeners::init();
+        $this->getServer()->getLogger()->notice("Loaded plugin files!");
         Commands::init();
+        $this->getServer()->getLogger()->notice("Loaded command files!");
         Items::init();
+        $this->getServer()->getLogger()->notice("Loaded items files!");
         Blocks::init();
+        $this->getServer()->getLogger()->notice("Loaded blocks files!");
         Entitys::init();
+        $this->getServer()->getLogger()->notice("Loaded entitys files!");
         Enchantments::init();
+        $this->getServer()->getLogger()->notice("Loaded enchantments files!");
         
         YamlProvider::init();
+        $this->getServer()->getLogger()->notice("Created config files!, check plugin_data folder");
         
         Factions::init();
+        $this->getServer()->getLogger()->notice("Factions loaded!");
         if (!InvMenuHandler::isRegistered()) InvMenuHandler::register($this);
 
         $this->getScheduler()->scheduleRepeatingTask(new BardTask(), 20);
@@ -97,7 +107,7 @@ TAG;
         $this->getScheduler()->scheduleRepeatingTask(new FactionTask(), 5 * 60 * 40);
         new TagPlayer();
 
-        $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load " . $this->getConfig()->get("LevelManager")["levelEndName"]);
+        $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "say Powered by alkaedaavHCF");
     }
     
     /**
@@ -105,7 +115,6 @@ TAG;
      */
     public function onDisable() : void {
         SQLite3Provider::disconnect();
-        MysqlProvider::disconnect();
 
         YamlProvider::save();
     }
