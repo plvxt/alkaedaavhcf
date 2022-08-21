@@ -8,17 +8,17 @@
 #               Plugin by alkaedaav
 #             Discord: alkaedaav#9877                   
 
-server_name: "&l&5Lunaria" # Coloring support.
+server_name: "&l&5HCF" # Coloring support.
 map_number: "1" # Only number, no letters.
 URL: "https://discord.com/api/webhooks/"
 kits:
-  menu.name: '&l&5LunariaKits'
+  menu.name: '&l&5HCFKits'
   item.slot.empty: '0:0'
   item.kit.lore:
     - ''
     - '&bCooldown time: &7{kit_cooldown}'
     - '&bYour cooldown time: &7{player_cooldown}'
-    - '&bBuy this awesome kit and more on &l&o&fstore.lunaria.gq&r'
+    - '&bBuy this awesome kit and more on &l&o&fstore.HCF.gq&r'
 MySQL:
   hostname: "DATABASE HERE"
   username: "DATABASE HERE"

@@ -39,7 +39,7 @@ class ReclaimCommand extends PluginCommand {
 				CrateManager::giveKey($sender, "Ordinary", 20);
 				CrateManager::giveKey($sender, "Strange", 17);
 				CrateManager::giveKey($sender, "Moon", 15);
-				CrateManager::giveKey($sender, "Blaze", 12);
+				CrateManager::giveKey($sender, "HCF", 12);
 				CrateManager::giveKey($sender, "Ability", 12);
 				CrateManager::giveKey($sender, "Alexpolu", 12);
 				
@@ -60,7 +60,7 @@ class ReclaimCommand extends PluginCommand {
 			CrateManager::giveKey($sender, "Ordinary", 20);
 				CrateManager::giveKey($sender, "Strange", 17);
 				CrateManager::giveKey($sender, "Moon", 15);
-				CrateManager::giveKey($sender, "Blaze", 12);
+				CrateManager::giveKey($sender, "HCF", 12);
 				CrateManager::giveKey($sender, "Ability", 12);
 				CrateManager::giveKey($sender, "Alexpolu", 12);
 				$sender->resetReclaimTime();
@@ -93,14 +93,14 @@ if($sender->getTimeReclaimRemaining() < time()){
 				$sender->sendMessage(str_replace(["&", "{time}"], ["§", Time::getTime($sender->getTimeReclaimRemaining())], Loader::getConfiguration("messages")->get("function_cooldown")));
             }
 		}
-		if($sender->hasPermission("Blaze.reclaim")){
+		if($sender->hasPermission("HCF.reclaim")){
 			if($sender->getTimeReclaimRemaining() < time()){
         		try {
 	        		$sender->resetReclaimTime();
 				CrateManager::giveKey($sender, "Ordinary", 20);
 				CrateManager::giveKey($sender, "Strange", 17);
 				CrateManager::giveKey($sender, "Moon", 15);
-				CrateManager::giveKey($sender, "Blaze", 12);
+				CrateManager::giveKey($sender, "HCF", 12);
 				CrateManager::giveKey($sender, "Ability", 12);
 				CrateManager::giveKey($sender, "Alexpolu", 12);
 				$sender->resetReclaimTime();
@@ -118,7 +118,7 @@ if($sender->getTimeReclaimRemaining() < time()){
 								CrateManager::giveKey($sender, "Ordinary", 15);
 				CrateManager::giveKey($sender, "Strange", 12);
 				CrateManager::giveKey($sender, "Moon", 10);
-				CrateManager::giveKey($sender, "Blaze", 8);
+				CrateManager::giveKey($sender, "HCF", 8);
 				CrateManager::giveKey($sender, "Ability", 8);
 				CrateManager::giveKey($sender, "Alexpolu", 8);
 				#CrateManager::giveKey($sender, "Spidix", 8);
@@ -137,7 +137,7 @@ if($sender->getTimeReclaimRemaining() < time()){
 				CrateManager::giveKey($sender, "Ordinary", 12);
 				CrateManager::giveKey($sender, "Strange", 10);
 				CrateManager::giveKey($sender, "Moon", 8);
-				CrateManager::giveKey($sender, "Blaze", 6);
+				CrateManager::giveKey($sender, "HCF", 6);
 				CrateManager::giveKey($sender, "Ability", 6);
 				CrateManager::giveKey($sender, "Alexpolu", 6);
 				$sender->resetReclaimTime();
@@ -155,7 +155,7 @@ if($sender->getTimeReclaimRemaining() < time()){
 				CrateManager::giveKey($sender, "Ordinary", 8);
 				CrateManager::giveKey($sender, "Strange", 6);
 				CrateManager::giveKey($sender, "Moon", 4);
-				CrateManager::giveKey($sender, "Blaze", 3);
+				CrateManager::giveKey($sender, "HCF", 3);
 				CrateManager::giveKey($sender, "Ability", 5);
 				CrateManager::giveKey($sender, "Alexpolu", 4);
 				$sender->resetReclaimTime();
@@ -190,7 +190,7 @@ if($sender->getTimeReclaimRemaining() < time()){
 				CrateManager::giveKey($sender, "Ordinary", 6);
 				CrateManager::giveKey($sender, "Strange", 4);
 				CrateManager::giveKey($sender, "Moon", 2);
-				CrateManager::giveKey($sender, "Blaze", 1);
+				CrateManager::giveKey($sender, "HCF", 1);
 				CrateManager::giveKey($sender, "Ability", 4);
 				CrateManager::giveKey($sender, "Alexpolu", 2);
 				

@@ -78,7 +78,7 @@ class KothTask extends Task {
 			
             # Webhook to send the message to discord
             $message = $koth->getName()." KOTH was captured by ".$koth->getCapturer()->getName();
-            Loader::getInstance()->getServer()->getAsyncPool()->submitTask(new DiscordMessage(Loader::getDefaultConfig("URL"), $message, "BlazeHCF | Koth Information"));        
+            Loader::getInstance()->getServer()->getAsyncPool()->submitTask(new DiscordMessage(Loader::getDefaultConfig("URL"), $message, "HCF | Koth Information"));        
             $koth->setEnable(false);
             Loader::getInstance()->getScheduler()->cancelTask($this->getTaskId());
         }else{

@@ -19,7 +19,7 @@ class StormBreaker extends Custom {
 	 * @param Int $usesLeft
 	 */
 	public function __construct(Int $usesLeft = 5){
-		parent::__construct(self::GOLD_AXE, TE::YELLOW.TE::BOLD."Alexpolu's Stormbreaker", [TE::GREEN.TE::BOLD."RARE ITEM".TE::RESET."\n\n".TE::GRAY."Remove the enemy's helmet after 3 seconds"."\n\n".TE::YELLOW."Uses Left: ".TE::GOLD.$usesLeft]);
+		parent::__construct(self::GOLD_AXE, TE::YELLOW.TE::BOLD."Stormbreaker", [TE::GREEN.TE::BOLD."RARE ITEM".TE::RESET."\n\n".TE::GRAY."Remove the enemy's helmet after 3 seconds"."\n\n".TE::YELLOW."Uses Left: ".TE::GOLD.$usesLeft]);
 		$this->setNamedTagEntry(new CompoundTag(self::CUSTOM_ITEM));
 		$this->getNamedTagEntry(self::CUSTOM_ITEM)->setInt(self::USES_LEFT, $usesLeft);
 	}

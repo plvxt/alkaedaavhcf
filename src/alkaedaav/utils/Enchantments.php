@@ -31,7 +31,7 @@ class  {
 		"PUNCH" => Enchantment::PUNCH,
 		"FLAME" => Enchantment::FLAME,
 		"NIGHT_VISION" => Enchantment::NIGHT_VISION,
-		"Blaze" => Enchantment::Blaze,
+		"INFINITY" => Enchantment::INFINITY,
 		"LUCK_OF_THE_SEA" => Enchantment::LUCK_OF_THE_SEA,
 		"LURE" => Enchantment::LURE,
 		"FROST_WALKER" => Enchantment::FROST_WALKER,

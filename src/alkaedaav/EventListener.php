@@ -382,20 +382,20 @@ class EventListener implements Listener {
     	}
 
 
-    	if($this->getRank($player) === "Blaze"){
-    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."Blaze".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
+    	if($this->getRank($player) === "HCF"){
+    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."HCF".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
     	}
-		if($this->getRank($player) === null||$this->getRank($player) === "Blaze_COL"){
-    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."Blaze".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::YELLOW."C".TE::BLUE."O".TE::RED."L".TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
+		if($this->getRank($player) === null||$this->getRank($player) === "HCF_COL"){
+    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."HCF".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::YELLOW."C".TE::BLUE."O".TE::RED."L".TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
     	}
-		if($this->getRank($player) === null||$this->getRank($player) === "Blaze_MEX"){
-    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."Blaze".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::GREEN."M".TE::WHITE."E".TE::RED."X".TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
+		if($this->getRank($player) === null||$this->getRank($player) === "HCF_MEX"){
+    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."HCF".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::GREEN."M".TE::WHITE."E".TE::RED."X".TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
     	}
-		if($this->getRank($player) === null||$this->getRank($player) === "Blaze_Demon"){
-    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."Blaze".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::RED."Demon".TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
+		if($this->getRank($player) === null||$this->getRank($player) === "HCF_Demon"){
+    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."HCF".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::RED."Demon".TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
     	}
-		if($this->getRank($player) === null||$this->getRank($player) === "Blaze_Lmao"){
-    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."Blaze".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::BOLD.TE::RED."Lmao".TE::RESET.TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
+		if($this->getRank($player) === null||$this->getRank($player) === "HCF_Lmao"){
+    		$format = TE::GOLD."[".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::AQUA."HCF".TE::OBFUSCATED.TE::YELLOW."!!".TE::RESET.TE::GOLD."] ".TE::GOLD."[".TE::BOLD.TE::RED."Lmao".TE::RESET.TE::GOLD."] ".TE::GOLD.$player->getName().TE::WHITE;
     	}
 
 
