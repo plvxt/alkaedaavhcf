@@ -2,6 +2,8 @@ name: alkaedaavHCF
 author: alkaedaav (nmoralesFZ)
 main: alkaedaav\Loader
 api: 3.0.0
-version: 1.0
+version: 2.1
 website: https://www.nmoralesfz.tk/
-edition: Blaze Network
+depend:
+- PureChat
+- PurePerms
