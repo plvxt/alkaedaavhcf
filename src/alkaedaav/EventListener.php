@@ -45,13 +45,12 @@ class EventListener implements Listener {
      */
     public function onPlayerJoinEvent(PlayerJoinEvent $event) : void {
         $player = $event->getPlayer();
-        $event->setJoinMessage(TE::BOLD.TE::GRAY."[".TE::GREEN."+".TE::GRAY."] ".TE::GRAY.$player->getName().TE::GOLD." entered the Network");
+        $event->setJoinMessage(TE::GRAY."[".TE::GREEN."+".TE::GRAY."] ".TE::GRAY.$player->getName().TE::GOLD." joined");
         if(!$player instanceof Player) {
             return;
         }
         PlayerBase::create($player->getName());
 		Loader::getInstance()->getScheduler()->scheduleRepeatingTask(new Scoreboard($player), 20);
-        Loader::getInstance()->getServer()->getAsyncPool()->submitTask(new LoadPlayerData($player->getName(), $player->getUniqueId()->toString(), Loader::getDefaultConfig("MySQL")["hostname"], Loader::getDefaultConfig("MySQL")["username"], Loader::getDefaultConfig("MySQL")["password"], Loader::getDefaultConfig("MySQL")["database"], Loader::getDefaultConfig("MySQL")["port"]));
     }
 
     /**
@@ -60,9 +59,9 @@ class EventListener implements Listener {
      */
     public function onPlayerQuitEvent(PlayerQuitEvent $event) : void {
         $player = $event->getPlayer();
-		$event->setQuitMessage(TE::GRAY."[".TE::RED."-".TE::GRAY."] ".TE::GRAY.$player->getName().TE::GOLD." left the Network");
+		$event->setQuitMessage(TE::GRAY."[".TE::RED."-".TE::GRAY."] ".TE::GRAY.$player->getName().TE::GOLD." left");
 
-        Loader::getInstance()->getServer()->getAsyncPool()->submitTask(new SavePlayerData($player->getName(), $player->getUniqueId()->toString(), $player->getClientId(), $player->getAddress(), Factions::inFaction($player->getName()) ? Factions::getFaction($player->getName()) : "This player not have faction", Loader::getDefaultConfig("MySQL")["hostname"], Loader::getDefaultConfig("MySQL")["username"], Loader::getDefaultConfig("MySQL")["password"], Loader::getDefaultConfig("MySQL")["database"], Loader::getDefaultConfig("MySQL")["port"]));
+        Loader::getInstance()->getServer()->getAsyncPool()->submitTask(new SavePlayerData($player->getName(), $player->getUniqueId()->toString(), $player->getClientId(), $player->getAddress(), Factions::inFaction($player->getName()) ? Factions::getFaction($player->getName()) : "This player not have faction"));
         if($player instanceof Player){
             $player->removePermissionsPlayer();
 		}
