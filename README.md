@@ -6,12 +6,12 @@ El plugin original fue tomado de la más reciente fuga de seguridad de [Infinity
 ESTE PLUGIN NECESITA DEPENDENCIAS, es muy importante descargarlo [descargar aquí](https://pasfox.com/HosFD)
 
 ## Comandos premium
-/reclaim - reclaim.command.use
-/fix all - fixall.command.use
-/fix all {user} - fixallothers.command.use
-/feed - feed.command.use
-/autofeed - autofeed.command.use
-/near - near.command.use
+- /reclaim | reclaim.command.use
+- /fix all | fixall.command.use
+- /fix all {user} | fixallothers.command.use
+- /feed | feed.command.use
+- /autofeed | autofeed.command.use
+- /near | near.command.use
 
 ## Próximas actualizaciones
 - Traducir todo al español
