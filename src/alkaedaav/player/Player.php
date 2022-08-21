@@ -982,7 +982,7 @@ class Player extends \pocketmine\Player {
     	if(Factions::isSpawnRegion($this)){
     		return "Spawn";
     	}else{
-    		return Factions::getRegionName($this) ?? "Wilderness";
+    		return Factions::getRegionName($this) ?? "Warzone";
     	}
     }
     

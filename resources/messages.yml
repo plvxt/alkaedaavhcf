@@ -7,8 +7,7 @@
 #  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
 #
 #               Plugin by alkaedaav
-#             Discord: alkaedaav#9877
-#            Edited for: Blaze Network                                      
+#             Discord: alkaedaav#9877                          
 
 
 not_float_number: "&cYou cannot place decimal numbers"
@@ -48,10 +47,10 @@ player_has_not_pending_invitations: "&cYou have no pending invitations for now!"
 player_is_already_in_faction: "&cThe player you want to invite is already part of another faction!"
 player_invite_correctly: "&aYou were invited to the faction &e{factionName}&a, you must put &e'/f accept' &aor &e'/f deny' &ato do something &7(the invite expires)"
 player_decline_invitation_correctly: "&cYou correctly declined the invitation of the faction &e{factionName}"
-player_have_invincibility: "&cYou have &l&dInvincibility&r&c place &6'/pvp enable' for this"
-other_player_have_invincibility: "&6{playerName}&r&c have &l&dInvincibility&r&c by &6{time}"
-player_not_enter_zone_with_invincibility: "&cYou can't login while you have &l&dInvincibility&r&c put the command &6'/pvp enable'"
-player_not_execute_command_with_invincibility: "&cYou can't run this command with &l&dInvincibility&r&c put the command &6'/pvp enable'"
+player_have_invincibility: "&cYou have &l&dGod Mode&r&c place &6'/pvp enable' for this"
+other_player_have_invincibility: "&6{playerName}&r&c have &l&dGod Modey&r&c by &6{time}"
+player_not_enter_zone_with_invincibility: "&cYou can't login while you have &l&dGod Mode&r&c put the command &6'/pvp enable'"
+player_not_execute_command_with_invincibility: "&cYou can't run this command with &l&dGod Mode&r&c put the command &6'/pvp enable'"
 faction_exists: "&c{factionName} it was already created by someone else!"
 faction_create: "&aFaction {factionName} was created correctly!"
 faction_big_name: "&c&cYour faction name cannot contain more than 15 characters!"
@@ -135,8 +134,8 @@ player_fill_food_correctly: "&aYour food was brought to 100%"
 player_autofeed_enable_correctly: "&aYou activated the automatic food filling"
 player_autofeed_disable_correctly: "&cYou desactivated the automatic food filling"
 player_roollback_correctly: "&aObtained the inventory of &l&e{playerName}"
-player_invincibility_is_enable: "&cYour &l&dInvisibility&r&c has already been deactivated"
-player_invisibility_enable_correnctly: "&aYou successfully disabled your &l&dInvisibility"
+player_invincibility_is_enable: "&cThe &l&dGod Mode&r&c has already been removed"
+player_invisibility_enable_correnctly: "&cThe &l&dGod Mode&r&c has already been removed"
 player_check_lives: "&aYou have a total of &l&6{currentLives}&r&a lives"
 player_check_other_player_lives: "&l&6{playerName}&r&a has a total of &l&6{currentLives}&r&a lives"
 player_doesnt_have_enough_lives: "&cYou don't have enough lives"
@@ -148,8 +147,8 @@ crate_alredy_exists: "&cThe crate &e{crateName}&c has already been created befor
 crate_not_exists: "&cThe crate &e{crateName}&c was never registered!"
 place_crate_correctly: "&aCrate &l&6{crateName}&r &ait was placed correctly!"
 remove_crate_correctly: "&aCrate &l&6{crateName}&r &ait was remove correctly!"
-crate_give_reward_correctly: "&l&bBlaze&r&7 | You received an item&f: &a{itemName}"
-crate_give_key_correctly: "&l&bBlaze&r&7 | You received the key&f: &a{keyName}"
+crate_give_reward_correctly: "&l&5Lunaria&r&7 | You received an item&f: &a{itemName}"
+crate_give_key_correctly: "&l&5Lunaria&r&7 | You received the key&f: &a{keyName}"
 crate_rewards_empty: "&cNot have rewards in this crate!"
 crate_edit_items_correctly: "&aCrate content &l&6{crateName}&r&a was edited correctly!"
 crate_edit_block_correctly: "&aCrate block &l&6{crateName}&r&a was edited correctly!"

@@ -40,7 +40,7 @@ class Spawn implements Listener {
 			if($player->isGodMode()) return;
 			if($block instanceof Fence||$block instanceof FenceGate||$block instanceof Door||$block instanceof Trapdoor||$block instanceof Chest||$item instanceof Bucket||$item instanceof Hoe||$item instanceof Shovel||$item instanceof ItemFrame){
 				$spawn = new Vector3(0, 0, 0);
-				if((int)$spawn->distance($event->getBlock()) < Loader::getDefaultConfig("FactionsConfig")["Wilderness"]){
+				if((int)$spawn->distance($event->getBlock()) < Loader::getDefaultConfig("FactionsConfig")["Warzone"]){
 					$event->setCancelled(true);
 				}
 			}
@@ -62,7 +62,7 @@ class Spawn implements Listener {
 		if($player->getLevel() === Loader::getInstance()->getServer()->getDefaultLevel()){
 			if($player->isGodMode()) return;
 			$spawn = new Vector3(0, 0, 0);
-			if((int)$spawn->distance($event->getBlock()) < Loader::getDefaultConfig("FactionsConfig")["Wilderness"]){
+			if((int)$spawn->distance($event->getBlock()) < Loader::getDefaultConfig("FactionsConfig")["Warzone"]){
 				$event->setCancelled(true);
 			}
 		}
@@ -80,7 +80,7 @@ class Spawn implements Listener {
 		$player = $event->getPlayer();
 		if($player->getLevel() === Loader::getInstance()->getServer()->getDefaultLevel()){
 			$spawn = new Vector3(0, 0, 0);
-			if((int)$spawn->distance($event->getBlock()) < Loader::getDefaultConfig("FactionsConfig")["Wilderness"]){
+			if((int)$spawn->distance($event->getBlock()) < Loader::getDefaultConfig("FactionsConfig")["Warzone"]){
 				if($player->isGodMode()) return;
 				$event->setCancelled(true);
 			}

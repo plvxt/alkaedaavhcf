@@ -246,17 +246,17 @@ class Faction implements Listener {
 		}
     	if($player->getRegion() !== $player->getCurrentRegion()){
     		if($player->getCurrentRegion() === "Spawn"){
-    			$player->sendMessage(TE::GRAY."Now Leaving: ".TE::RED.$player->getRegion().TE::YELLOW." (".TE::RED."Deathban".TE::YELLOW.")");
-				$player->sendMessage(TE::GRAY."Now Entering: ".TE::RED."Spawn".TE::YELLOW." (".TE::GREEN."No-Deathban".TE::YELLOW.")");
+    			$player->sendMessage(TE::GRAY."Previous HQ: ".TE::RED.$player->getRegion());
+				$player->sendMessage(TE::GRAY."Actual HQ: ".TE::RED."Spawn".TE::YELLOW);
 			}else{ 
 				if($player->getRegion() === "Spawn"){
-					$player->sendMessage(TE::GRAY."Now Leaving: ".TE::RED."Spawn".TE::YELLOW." (".TE::GREEN."No-Deathban".TE::YELLOW.")");
-					$player->sendMessage(TE::GRAY."Now Entering: ".TE::RED.$player->getCurrentRegion().TE::YELLOW." (".TE::RED."Deathban".TE::YELLOW.")");
+					$player->sendMessage(TE::GRAY."Previous HQ: ".TE::RED."Spawn".TE::YELLOW);
+					$player->sendMessage(TE::GRAY."Actual HQ: ".TE::RED.$player->getCurrentRegion().TE::YELLOW);
 				}else{
 					$region = $player->getRegion() === Factions::getFaction($player->getName()) ? TE::GREEN.$player->getRegion() : TE::RED.$player->getRegion();
 					$currentRegion = $player->getCurrentRegion() === Factions::getFaction($player->getName()) ? TE::GREEN.$player->getCurrentRegion() : TE::RED.$player->getCurrentRegion();
-					$player->sendMessage(TE::GRAY."Now Leaving: ".$region.TE::YELLOW." (".TE::RED."Deathban".TE::YELLOW.")");
-					$player->sendMessage(TE::GRAY."Now Entering: ".TE::RED.$currentRegion.TE::YELLOW." (".TE::RED."Deathban".TE::YELLOW.")");
+					$player->sendMessage(TE::GRAY."Previous HQ: ".$region.TE::YELLOW);
+					$player->sendMessage(TE::GRAY."Actual HQ: ".TE::RED.$currentRegion.TE::YELLOW);
 				}
 			}
 			$player->setRegion($player->getCurrentRegion());
