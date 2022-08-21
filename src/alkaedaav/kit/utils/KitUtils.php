@@ -89,7 +89,7 @@ final class KitUtils
                 
                 if (!$player->isGodMode()) {
                     if ($player->getTimeKitRemaining($kit->getName()) > time()) {
-                        $player->sendMessage(str_replace(["&", "{time}"], ["§", Time::getTime($player->getTimeKitRemaining($kit->getName()))], Loader::getConfiguration("messages")->get("function_cooldown")));
+                        $player->sendMessage(str_replace(["&", "{time}"], ["ยง", Time::getTime($player->getTimeKitRemaining($kit->getName()))], Loader::getConfiguration("messages")->get("function_cooldown")));
                         return $transaction->discard();
                     }
                     $player->resetKitTime($kit->getName());
