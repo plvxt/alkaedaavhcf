@@ -9,7 +9,6 @@ Es muy importante que tengas estos plugins para poder iniciar el servidor, sino 
  - [Descargar PureChat 1.4.11](https://files.catbox.moe/y8fxjd.phar)
  - [Descargar DevTools 1.14.2](https://files.catbox.moe/63dgv0.phar)
 
-DevTools v1.14.2, EskoBE v, PureChat v1.4.11, PurePerms v1.4.3
 ## Comandos premium
 - /reclaim | reclaim.command.use
 - /fix all | fixall.command.use
