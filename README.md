@@ -1,5 +1,5 @@
-# alkaedaavhcf (para EskoBE)
-alkaedaavhcf es un "fork" de [VitalHCF](https://github.com/ibrymax), diseñado y arreglado para trabajar con [EskoBE](https://github.com/MCPE357/EskoBE/) sin ningún problema.
+# alkaedaavhcf (para BetterAltay)
+alkaedaavhcf es un "fork" de [VitalHCF](https://github.com/ibrymax), diseñado y arreglado para trabajar con [BetterAltay](https://github.com/Benedikt05/BetterAltay) sin ningún problema.
 
 El plugin original fue tomado de la más reciente fuga de seguridad de [InfinityHCF](https://www.mediafire.com/file/plf054v52pva822/AllHCF.rar/file).
 
