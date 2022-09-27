@@ -21,7 +21,6 @@ Es muy importante que tengas estos plugins para poder iniciar el servidor, sino 
 ## Plugins extras
 - [Descargar Blockshop4alkaedaavhcf v1.0](https://github.com/nmoralesfz/blockshop4alkaedaavhcf)
 - [Descargar AirDrops4alkaedaavhcf v1.0](https://github.com/nmoralesfz/AirDrops4alkaedaavhcf)
-(Algunos links pueden estar rotos porque están en construcción)
 
 
 ## Próximas actualizaciones
