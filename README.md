@@ -1,13 +1,12 @@
 # alkaedaavhcf (para BetterAltay)
-alkaedaavhcf es un "fork" de [VitalHCF](https://github.com/ibrymax), diseñado y arreglado para trabajar con [BetterAltay](https://github.com/Benedikt05/BetterAltay) sin ningún problema.
-
-El plugin original fue tomado de la más reciente fuga de seguridad de [InfinityHCF](https://www.mediafire.com/file/plf054v52pva822/AllHCF.rar/file).
+alkaedaavhcf es un "fork" de VitalHCF, diseñado y arreglado para trabajar con [BetterAltay](https://github.com/Benedikt05/BetterAltay) sin ningún problema.
 
 ## Dependencias
 Es muy importante que tengas estos plugins para poder iniciar el servidor, sino lo haces el plugin directamente no funcionará.
  - [Descargar PurePerms 1.4.3](https://files.catbox.moe/4ljd2b.phar)
  - [Descargar PureChat 1.4.11](https://files.catbox.moe/y8fxjd.phar)
  - [Descargar DevTools 1.14.2](https://files.catbox.moe/63dgv0.phar)
+ - [Descargar mwavfix 1.1](https://files.catbox.moe/oa4agr.phar)
 
 ## Comandos premium
 - /reclaim | reclaim.command.use
@@ -28,3 +27,4 @@ Es muy importante que tengas estos plugins para poder iniciar el servidor, sino 
 - Añadir más objetos especiales
 - Añadir un anti-lag
 - Mejorar el auto-guardado de factions
+- Agregar dimensiones alternas
