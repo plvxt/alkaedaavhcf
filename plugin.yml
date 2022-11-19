@@ -1,9 +1,10 @@
 name: alkaedaavHCF
-author: alkaedaav (nmoralesFZ)
+author: nmoralesFZ (uXizz)
 main: alkaedaav\Loader
 api: 3.0.0
-version: 2.1
-website: https://www.nmoralesfz.tk/
+version: 3.0
+website: https://www.nmoralesfz.tk/s/av
 depend:
 - PureChat
 - PurePerms
+- mwav

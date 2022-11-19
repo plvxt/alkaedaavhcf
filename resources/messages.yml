@@ -1,14 +1,16 @@
 ---
-#         _ _                  _                   
-#        | | |                | |                  
-#    __ _| | | ____ _  ___  __| | __ _  __ ___   __
-#   / _` | | |/ / _` |/ _ \/ _` |/ _` |/ _` \ \ / /
-#  | (_| | |   < (_| |  __/ (_| | (_| | (_| |\ V / 
-#  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
 #
-#               Plugin by alkaedaav
-#             Discord: alkaedaav#9877                          
+#  ▄▀█ █░░ █▄▀ ▄▀█ █▀▀ █▀▄ ▄▀█ ▄▀█ █░█ █░█ █▀▀ █▀▀
+#  █▀█ █▄▄ █░█ █▀█ ██▄ █▄▀ █▀█ █▀█ ▀▄▀ █▀█ █▄▄ █▀░
+#
+#               Plugin by nmoralesFZ
+#             Discord: nmoralesFZ#2607            
+#  Descárgalo desde: https://www.nmoralesfz.tk/s/av
 
+
+# A menos de que vayas a traducir el archivo no recomiendo que toques nada de este archivo!
+# Si lo traduces completo a otro idioma envíamelo a mi correo para obtener una recompensa!
+#                                  - morales@sandia.vip -
 
 not_float_number: "&cYou cannot place decimal numbers"
 not_is_numeric: "&cYou are entering a string, it must be numeric!"

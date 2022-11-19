@@ -1,46 +1,44 @@
 ---
-#         _ _                  _                   
-#        | | |                | |                  
-#    __ _| | | ____ _  ___  __| | __ _  __ ___   __
-#   / _` | | |/ / _` |/ _ \/ _` |/ _` |/ _` \ \ / /
-#  | (_| | |   < (_| |  __/ (_| | (_| | (_| |\ V / 
-#  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
 #
-#               Plugin by alkaedaav
-#             Discord: alkaedaav#9877                            
+#  ▄▀█ █░░ █▄▀ ▄▀█ █▀▀ █▀▄ ▄▀█ ▄▀█ █░█ █░█ █▀▀ █▀▀
+#  █▀█ █▄▄ █░█ █▀█ ██▄ █▄▀ █▀█ █▀█ ▀▄▀ █▀█ █▄▄ █▀░
+#
+#               Plugin by nmoralesFZ
+#             Discord: nmoralesFZ#2607            
+#  Descárgalo desde: https://www.nmoralesfz.tk/s/av    
 
 
 
-server_ip: "github.com/nmoralesfz/alkaedaavhcf"
-scoreb_lines: "" # 15 lines recommended
-StormBreaker: "&5&lStormBreaker&8» &r&7{time} "
-AntiTrapper: "&5&lAntiTrapper&8» &r&7{time} "
-Bard: "&5&lZombieBard&8» &r&7{time} "
-RogueItem: "&5&lRogue Sword&8» &r&7{time} "
-Berserk: "&5&lBerserk&8» &r&7{time} "
-EggPort: "&5&lEggPort&8» &r&7{time} "
-SpecialItem: "&l&5Partner Item&8» &r&7{time} "
-NinjaShear: "&l&5NinjaShear&8» &r&7{time} "
-PotionCounter: "&l&5PotionCounter&8» &r&7{time} "
-EnderPearl: "&5&lEnderPearl&8» &r&7{time} "
-CombatTag: "&5&lCombatTag&8» &r&7{time} "
-Apple: "&5&lApple&8» &r&7{time} "
-Logout: "&5&lLogout&8» &r&7{time} "
-Home: "&5&lHome&8» &r&7{time} "
-Stuck: "&5&lStuck&8» &r&7{time} "
-SOTW: "&5&lSOTW&8» &r&7{time} "
-EOTW: "&5&lEOTW&8» &r&7{time} "
-KOTH: "&l&5{kothName}&8» &r&7{time} "
-SALE: "&5&lRestart&8» &r&7{time}"
-PP: "&l&5PP All in&8» &r&7{time} "
-Airdrop: "&l&5Airdrop all in&8» &r&7{time} "
-Invincibility: "&5&lPvP Timer&8» &r&7{time} "
-BardEnergy: "&5&lBardEnergy&8» &r&c{bardEnergy} "
-ArcherEnergy: "&5&lArcherEnergy&8» &r&c{archerEnergy} "
-MageEnergy: "&5&lMageEnergy&8» &r&c{mageEnergy} "
+server_ip: "jugar.tuip.com"
+scoreb_lines: "" # Separador para la scoreboard (recomendado 15 líneas)
+StormBreaker: "&b&lStormBreaker&8» &r&7{time} "
+AntiTrapper: "&b&lAntiTrapper&8» &r&7{time} "
+Bard: "&b&lZombieBard&8» &r&7{time} "
+RogueItem: "&b&lRogue Sword&8» &r&7{time} "
+Berserk: "&b&lBerserk&8» &r&7{time} "
+EggPort: "&b&lEggPort&8» &r&7{time} "
+SpecialItem: "&l&bPartner Item&8» &r&7{time} "
+NinjaShear: "&l&bNinjaShear&8» &r&7{time} "
+PotionCounter: "&l&bPotionCounter&8» &r&7{time} "
+EnderPearl: "&b&lEnderPearl&8» &r&7{time} "
+CombatTag: "&b&lCombatTag&8» &r&7{time} "
+Apple: "&b&lApple&8» &r&7{time} "
+Logout: "&b&lLogout&8» &r&7{time} "
+Home: "&b&lHome&8» &r&7{time} "
+Stuck: "&b&lStuck&8» &r&7{time} "
+SOTW: "&b&lSOTW&8» &r&7{time} "
+EOTW: "&b&lEOTW&8» &r&7{time} "
+KOTH: "&l&b{kothName}&8» &r&7{time} "
+SALE: "&b&lRestart&8» &r&7{time}"
+PP: "&l&bPP All in&8» &r&7{time} "
+Airdrop: "&l&bAirdrop all in&8» &r&7{time} "
+Invincibility: "&b&lPvP Timer&8» &r&7{time} "
+BardEnergy: "&b&lBardEnergy&8» &r&c{bardEnergy} "
+ArcherEnergy: "&b&lArcherEnergy&8» &r&c{archerEnergy} "
+MageEnergy: "&b&lMageEnergy&8» &r&c{mageEnergy} "
 factionFocus: [ 
-  "&l&5Faction&8» &r&7{factionName} ", 
-  "&l&5Focus HQ&8» &r&7{factionHome} ", 
-  "&l&5DTR&8» &r&7{factionDTR} ", 
-  "&l&5Online&8» &r&7{factionOnlinePlayers} ", 
+  "&l&bFaction&8» &r&7{factionName} ", 
+  "&l&bFocus HQ&8» &r&7{factionHome} ", 
+  "&l&bDTR&8» &r&7{factionDTR} ", 
+  "&l&bOnline&8» &r&7{factionOnlinePlayers} ", 
 ]

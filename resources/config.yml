@@ -1,32 +1,30 @@
-#         _ _                  _                   
-#        | | |                | |                  
-#    __ _| | | ____ _  ___  __| | __ _  __ ___   __
-#   / _` | | |/ / _` |/ _ \/ _` |/ _` |/ _` \ \ / /
-#  | (_| | |   < (_| |  __/ (_| | (_| | (_| |\ V / 
-#  \__,_|_|_|\_\__,_|\___|\__,_|\__,_|\__,_| \_/  
 #
-#               Plugin by alkaedaav
-#             Discord: alkaedaav#9877                   
+#  ▄▀█ █░░ █▄▀ ▄▀█ █▀▀ █▀▄ ▄▀█ ▄▀█ █░█ █░█ █▀▀ █▀▀
+#  █▀█ █▄▄ █░█ █▀█ ██▄ █▄▀ █▀█ █▀█ ▀▄▀ █▀█ █▄▄ █▀░
+#
+#               Plugin by nmoralesFZ
+#             Discord: nmoralesFZ#2607            
+#  Descárgalo desde: https://www.nmoralesfz.tk/s/av
 
-server_name: "&l&5HCF" # Coloring support.
-map_number: "1" # Only number, no letters.
-URL: "https://discord.com/api/webhooks/"
+server_name: "&l&bTu&fServer" # Soporte para coloreado con & (no uses § o no funcionará).
+map_number: "1" # Sólo números, sin letras.
+URL: "https://discord.com/api/webhooks/" # Ingresa tu webhook para anunciar KOTH's y otras cosas.
+
+# --------------------------------------------------------
+# 🢃 Menú de kits inicia aquí 🢃
 kits:
-  menu.name: '&l&5HCFKits'
+  menu.name: '&l&bKits'
   item.slot.empty: '0:0'
   item.kit.lore:
     - ''
-    - '&bCooldown time: &7{kit_cooldown}'
-    - '&bYour cooldown time: &7{player_cooldown}'
-    - '&bBuy this awesome kit and more on &l&o&fstore.HCF.gq&r'
-MySQL:
-  hostname: "DATABASE HERE"
-  username: "DATABASE HERE"
-  password: "DATABASE HERE"
-  database: "DATABASE HERE"
-  port: 3306
-Global:
+    - '&bTiempo de espera: &7{kit_cooldown}'
+    - '&bTu tiempo de espera: &7{player_cooldown}'
+    - '&bCompra este kit y mucho más en &l&o&ftienda.tuip.com&r'
+# 🢁 Menú de kits termina aquí 🢁 
+# --------------------------------------------------------
+# 🢃 Configuración de cooldowns (tiempos de espera) inicia aquí 🢃
 Cooldowns:
+Global:
   EnderPearl: 15
   CombatTag: 30
   ArcherTag: 10
@@ -45,16 +43,21 @@ Cooldowns:
   Home: 10
   Stuck: 35
   Logout: 16
+# 🢁 Configuración de cooldowns (tiempos de espera) termina aquí 🢁 
+# --------------------------------------------------------
+# 🢃 Configuración de factions inicia aquí 🢃
 FactionsConfig:
   maxPlayers: 12
   SpreadWater: true
   BorderLimit: 2000
   Warzone: 300
-  
-  # Coming soon
+# 🢁 Configuración de factions termina aquí 🢁 
+# --------------------------------------------------------
+# 🢃 Configuración de dimensiones inicia aquí 🢃
 LevelManager:
   EntitySpawnDelay: 400
-  levelEndName: "End"
-  levelNetherName: "Nether"
+  levelEndName: "endav"
+  levelNetherName: "netherav"
 block_ids: ["119:0", "120:0"]
 items_id: ["46:0", "259:0, 2257:0"]
+# 🢁 Configuración de dimensiones termina aquí 🢁 
