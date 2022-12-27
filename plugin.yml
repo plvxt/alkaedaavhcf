@@ -1,9 +1,9 @@
-name: alkaedaavHCF
-author: nmoralesFZ (uXizz)
+name: alkaedaavhcf
+author: nmoralesFZ
 main: alkaedaav\Loader
 api: 3.0.0
-version: 3.0
-website: https://www.nmoralesfz.tk/s/av
+version: 3.0.1
+website: https://github.com/nmoralesfz/alkaedaavhcf
 depend:
 - PureChat
 - PurePerms
