@@ -23,8 +23,8 @@ kits:
 # 🢁 Menú de kits termina aquí 🢁 
 # --------------------------------------------------------
 # 🢃 Configuración de cooldowns (tiempos de espera) inicia aquí 🢃
-Cooldowns:
 Global:
+Cooldowns:
   EnderPearl: 15
   CombatTag: 30
   ArcherTag: 10
