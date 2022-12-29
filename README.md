@@ -18,7 +18,7 @@ Es muy importante que tengas estos plugins para poder iniciar el servidor, sino 
 - Bola de nieve | snowball.use (no es comando jiji)
 
 ## Plugins extras
-- [Descargar Blockshop4alkaedaavhcf v1.0](https://github.com/nmoralesfz/blockshop4alkaedaavhcf)
+- [Descargar BlockShopAV](https://github.com/nmoralesFZ/BlockShopAV)
 
 ## Próximas actualizaciones
 - Traducir todo al español
