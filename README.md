@@ -25,4 +25,3 @@ Es muy importante que tengas estos plugins para poder iniciar el servidor, sino 
 - Añadir más objetos especiales
 - Añadir un anti-lag
 - Mejorar el auto-guardado de factions
-- Agregar dimensiones alternas
