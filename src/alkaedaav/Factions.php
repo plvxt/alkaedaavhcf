@@ -814,7 +814,7 @@ class Factions {
       $data = SQLite3Provider::getDataBase();
       $result = $data->query("SELECT * FROM points ORDER BY points DESC LIMIT 10;");
       $count = 1;
-      $text = "§b§lTop Factions - §9HCF§r\n";
+      $text = "§l§cPremio a Top 1: §f$5 USD §9Pay§bPal\n\n§r§6Top Factions:\n";
       
       while($resultArr = $result->fetchArray(SQLITE3_ASSOC)) {
           $name = $resultArr["factionName"];

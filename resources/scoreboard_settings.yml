@@ -11,34 +11,35 @@
 
 server_ip: "jugar.tuip.com"
 scoreb_lines: "" # Separador para la scoreboard (recomendado 15 líneas)
-StormBreaker: "&b&lStormBreaker&8» &r&7{time} "
-AntiTrapper: "&b&lAntiTrapper&8» &r&7{time} "
-Bard: "&b&lZombieBard&8» &r&7{time} "
-RogueItem: "&b&lRogue Sword&8» &r&7{time} "
-Berserk: "&b&lBerserk&8» &r&7{time} "
-EggPort: "&b&lEggPort&8» &r&7{time} "
-SpecialItem: "&l&bPartner Item&8» &r&7{time} "
-NinjaShear: "&l&bNinjaShear&8» &r&7{time} "
-PotionCounter: "&l&bPotionCounter&8» &r&7{time} "
-EnderPearl: "&b&lEnderPearl&8» &r&7{time} "
-CombatTag: "&b&lCombatTag&8» &r&7{time} "
-Apple: "&b&lApple&8» &r&7{time} "
-Logout: "&b&lLogout&8» &r&7{time} "
-Home: "&b&lHome&8» &r&7{time} "
-Stuck: "&b&lStuck&8» &r&7{time} "
-SOTW: "&b&lSOTW&8» &r&7{time} "
-EOTW: "&b&lEOTW&8» &r&7{time} "
-KOTH: "&l&b{kothName}&8» &r&7{time} "
-SALE: "&b&lRestart&8» &r&7{time}"
-PP: "&l&bPP All in&8» &r&7{time} "
-Airdrop: "&l&bAirdrop all in&8» &r&7{time} "
-Invincibility: "&b&lPvP Timer&8» &r&7{time} "
-BardEnergy: "&b&lBardEnergy&8» &r&c{bardEnergy} "
-ArcherEnergy: "&b&lArcherEnergy&8» &r&c{archerEnergy} "
-MageEnergy: "&b&lMageEnergy&8» &r&c{mageEnergy} "
+hq_service: "  §9HQ§8:"
+StormBreaker: "  &eStormBreaker&8: &r&f{time} "
+AntiTrapper: "  &eAntiTrapper&8: &r&f{time} "
+Bard: "  &eZombieBard&8: &r&f{time} "
+RogueItem: "  &eRogue Sword&8: &r&f{time} "
+Berserk: "  &eBerserk&8: &r&f{time} "
+EggPort: "  &eEggPort&8: &r&f{time} "
+SpecialItem: "  &ePartner Item&8: &r&f{time} "
+NinjaShear: "  &eNinjaShear&8: &r&f{time} "
+PotionCounter: "  &ePotionCounter&8: &r&f{time} "
+EnderPearl: "  &eEnderPearl&8: &r&f{time} "
+CombatTag: "  &eCombatTag&8: &r&f{time} "
+Apple: "  &6Apple&8: &r&f{time} "
+Logout: "  &6Logout&8: &r&f{time} "
+Home: "  &6Home&8: &r&f{time} "
+Stuck: "  &6Stuck&8: &r&f{time} "
+SOTW: "  &aSOTW&8: &r&f{time} "
+EOTW: "  &cEOTW&8: &r&f{time} "
+KOTH: "  &4{kothName}&8: &r&f{time} "
+SALE: "  &dRestart&8: &r&f{time}"
+PP: "  &dPP All in&8: &r&f{time} "
+Airdrop: "  &dAirdrop all in&8: &r&f{time} "
+Invincibility: "  &2PvP Timer&8: &r&f{time} "
+BardEnergy: "  &5BardEnergy&8: &r&c{bardEnergy} "
+ArcherEnergy: "  &5ArcherEnergy&8: &r&c{archerEnergy} "
+MageEnergy: "  &5MageEnergy&8: &r&c{mageEnergy} "
 factionFocus: [ 
-  "&l&bFaction&8» &r&7{factionName} ", 
-  "&l&bFocus HQ&8» &r&7{factionHome} ", 
-  "&l&bDTR&8» &r&7{factionDTR} ", 
-  "&l&bOnline&8» &r&7{factionOnlinePlayers} ", 
+  "  &bFaction&8: &r&f{factionName} ", 
+  "  &bFocus HQ&8: &r&f{factionHome} ", 
+  "  &bDTR&8: &r&f{factionDTR} ", 
+  "  &bOnline&8: &r&f{factionOnlinePlayers} ", 
 ]

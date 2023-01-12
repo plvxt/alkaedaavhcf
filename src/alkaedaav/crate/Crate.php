@@ -57,7 +57,6 @@ class Crate {
 		$this->key = $key;
 		$this->keyName = $keyName;
 		$this->nameFormat = $nameFormat;
-		
 		$this->data["block"][$block] = $name;
 		$this->data["key"][$key] = $name;
 
@@ -208,7 +207,7 @@ class Crate {
 			return false;
 		}
 		$position = new Vector3($this->getPosition()[0] + 0.5, $this->getPosition()[1] + 1, $this->getPosition()[2] + 0.5);
-		$this->setParticles(new FloatingTextParticle($position, "", $this->getNameFormat()."\n".TE::WHITE."Tap with the indicated key to get the rewards"));
+		$this->setParticles(new FloatingTextParticle($position, "", $this->getNameFormat()."\n".TE::DARK_GRAY."-*-\n".TE::WHITE."Toca para abrir\n".TE::AQUA."buy.sandia.vip"));
 		foreach(Loader::getInstance()->getServer()->getOnlinePlayers() as $player){
 			$this->addParticles($player);
 		}

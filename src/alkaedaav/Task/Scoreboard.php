@@ -123,12 +123,12 @@ class Scoreboard extends Task {
         }
               $claim = TE::RED.$player->getRegion();
         if($player->getRegion() === Factions::getFaction($player->getName())){
-          $claim = TE::WHITE.$player->getRegion();
+          $claim = TE::LIGHT_PURPLE.$player->getRegion();
         }
         if($player->getRegion() === "Spawn"){
-          $claim = TE::WHITE.$player->getRegion();
+          $claim = TE::LIGHT_PURPLE.$player->getRegion();
         }
-        $scoreboard[] = TE::DARK_AQUA.TE::BOLD."HQ".TE::DARK_GRAY."» ".$claim;
+        $scoreboard[] = $config->get("hq_service") . $claim;
         
         if($player->isFocus()){
             if(!Factions::isFactionExists($player->getFocusFaction())) $player->setFocus(false);
@@ -137,10 +137,11 @@ class Scoreboard extends Task {
             }
         }
         if(count($scoreboard) >= 1){
-            $scoreboard[] = TE::GRAY. $config->get("scoreb_lines");
+            $scoreboard[] = TE::GRAY. " ";
             $texting = [TE::GRAY.TE::GRAY. $config->get("scoreb_lines") . TE::RESET];
-			$network = [TE::DARK_AQUA.TE::BOLD. "Web" . TE::DARK_GRAY . "» " . TE::RESET . TE::GRAY . $config->get("server_ip") . TE::RESET];
-      	  $scoreboard = array_merge($texting, $network, $scoreboard);
+			$network = [TE::GRAY . $config->get("scoreb_lines") . TE::RESET];
+            $acme = [TE::GRAY . "  " . $config->get("server_ip") . TE::RESET];
+      	  $scoreboard = array_merge($texting, $scoreboard, $acme, $network);
         }else{
         	$api->removePrimary($player);
         	return;

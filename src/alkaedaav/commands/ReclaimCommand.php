@@ -36,13 +36,11 @@ class ReclaimCommand extends PluginCommand {
         		try {
 	        		$sender->resetReclaimTime();
 	        		
-				CrateManager::giveKey($sender, "Ordinary", 20);
-				CrateManager::giveKey($sender, "Strange", 17);
-				CrateManager::giveKey($sender, "Moon", 15);
-				CrateManager::giveKey($sender, "HCF", 12);
-				CrateManager::giveKey($sender, "Ability", 12);
-				CrateManager::giveKey($sender, "Alexpolu", 12);
-				
+				CrateManager::giveKey($sender, "starter", 30);
+				CrateManager::giveKey($sender, "bolt", 16);
+				CrateManager::giveKey($sender, "cosmica", 8);
+				CrateManager::giveKey($sender, "partner", 10);
+				CrateManager::giveKey($sender, "suerte", 3);
 				#$sender->sendMessage("recla ddadl");
 				$sender->resetReclaimTime();
 				Loader::getInstance()->getServer()->broadcastMessage(str_replace(["&", "{playerName}"], ["§", $sender->getName()], Loader::getConfiguration("messages")->get("player_reclaim_correctly")));
@@ -53,16 +51,15 @@ class ReclaimCommand extends PluginCommand {
             	$sender->sendMessage(str_replace(["&", "{time}"], ["§", Time::getTime($sender->getTimeReclaimRemaining())], Loader::getConfiguration("messages")->get("function_cooldown")));
             }
 		}
-		if($sender->hasPermission("partner.reclaim")){
+		if($sender->hasPermission("vip.reclaim")){
 			if($sender->getTimeReclaimRemaining() < time()){
         		try {
 	        		$sender->resetReclaimTime();
-			CrateManager::giveKey($sender, "Ordinary", 20);
-				CrateManager::giveKey($sender, "Strange", 17);
-				CrateManager::giveKey($sender, "Moon", 15);
-				CrateManager::giveKey($sender, "HCF", 12);
-				CrateManager::giveKey($sender, "Ability", 12);
-				CrateManager::giveKey($sender, "Alexpolu", 12);
+				CrateManager::giveKey($sender, "starter", 15);
+				CrateManager::giveKey($sender, "bolt", 8);
+				CrateManager::giveKey($sender, "cosmica", 4);
+				CrateManager::giveKey($sender, "partner", 5);
+				CrateManager::giveKey($sender, "suerte", 2);
 				$sender->resetReclaimTime();
 				Loader::getInstance()->getServer()->broadcastMessage(str_replace(["&", "{playerName}"], ["§", $sender->getName()], Loader::getConfiguration("messages")->get("player_reclaim_correctly")));
 		      	} catch(\Exception $exception){
@@ -77,12 +74,11 @@ class ReclaimCommand extends PluginCommand {
 if($sender->getTimeReclaimRemaining() < time()){
         		try {
 	        		$sender->resetReclaimTime();
-				CrateManager::giveKey($sender, "Demonic", 6);
-				CrateManager::giveKey($sender, "Ultra", 10);
-				CrateManager::giveKey($sender, "Alexpolu", 4);
-				#CrateManager::giveKey($sender, "Thureland", 4);
-				CrateManager::giveKey($sender, "Aurora", 6);
-				CrateManager::giveKey($sender, "Ability", 4);
+				CrateManager::giveKey($sender, "starter", 8);
+				CrateManager::giveKey($sender, "bolt", 4);
+				CrateManager::giveKey($sender, "cosmica", 2);
+				CrateManager::giveKey($sender, "partner", 3);
+				CrateManager::giveKey($sender, "suerte", 1);
 				$sender->resetReclaimTime();
 				Loader::getInstance()->getServer()->broadcastMessage(str_replace(["&", "{playerName}"], ["§", $sender->getName()], Loader::getConfiguration("messages")->get("user_reclaim")));
         		} catch(\Exception $exception){
@@ -93,16 +89,15 @@ if($sender->getTimeReclaimRemaining() < time()){
 				$sender->sendMessage(str_replace(["&", "{time}"], ["§", Time::getTime($sender->getTimeReclaimRemaining())], Loader::getConfiguration("messages")->get("function_cooldown")));
             }
 		}
-		if($sender->hasPermission("HCF.reclaim")){
+		if($sender->hasPermission("ultra.reclaim")){
 			if($sender->getTimeReclaimRemaining() < time()){
         		try {
 	        		$sender->resetReclaimTime();
-				CrateManager::giveKey($sender, "Ordinary", 20);
-				CrateManager::giveKey($sender, "Strange", 17);
-				CrateManager::giveKey($sender, "Moon", 15);
-				CrateManager::giveKey($sender, "HCF", 12);
-				CrateManager::giveKey($sender, "Ability", 12);
-				CrateManager::giveKey($sender, "Alexpolu", 12);
+				CrateManager::giveKey($sender, "starter", 30);
+				CrateManager::giveKey($sender, "bolt", 16);
+				CrateManager::giveKey($sender, "cosmica", 8);
+				CrateManager::giveKey($sender, "partner", 10);
+				CrateManager::giveKey($sender, "suerte", 3);
 				$sender->resetReclaimTime();
 				Loader::getInstance()->getServer()->broadcastMessage(str_replace(["&", "{playerName}"], ["§", $sender->getName()], Loader::getConfiguration("messages")->get("player_reclaim_correctly")));
         		} catch(\Exception $exception){

@@ -9,6 +9,7 @@
 server_name: "&l&bTu&fServer" # Soporte para coloreado con & (no uses § o no funcionará).
 map_number: "1" # Sólo números, sin letras.
 URL: "https://discord.com/api/webhooks/" # Ingresa tu webhook para anunciar KOTH's y otras cosas.
+store: "" # Tienda del servidor.
 
 # --------------------------------------------------------
 # 🢃 Menú de kits inicia aquí 🢃
