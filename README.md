@@ -21,7 +21,6 @@ Es muy importante que tengas estos plugins para poder iniciar el servidor, sino 
 - [Descargar BlockShopAV](https://github.com/nmoralesFZ/BlockShopAV)
 
 ## Próximas actualizaciones
-- Traducir todo al español
+- Traducir todo al español (Casi terminado)
 - Añadir más objetos especiales
 - Añadir un anti-lag
-- Mejorar el auto-guardado de factions
