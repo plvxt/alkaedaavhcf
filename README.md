@@ -1,6 +1,9 @@
 # alkaedaavhcf (para BetterAltay)
 alkaedaavhcf es un "fork" de VitalHCF, diseñado y arreglado para trabajar con [BetterAltay](https://github.com/Benedikt05/BetterAltay) sin ningún problema.
 
+## OBSOLETO!!
+Este plugin está obsoleto, no funciona en nuevas versiones de BetterAltay y no hay planes de revivir el proyecto.
+
 ## Dependencias
 Es muy importante que tengas estos plugins para poder iniciar el servidor, sino lo haces el plugin directamente no funcionará.
  - [Descargar PurePerms 1.4.3](https://files.catbox.moe/4ljd2b.phar)
