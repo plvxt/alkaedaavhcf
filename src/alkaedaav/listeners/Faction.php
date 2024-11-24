@@ -273,7 +273,7 @@ class Faction implements Listener {
 			$player->setLogout(false);
 			$player->sendMessage(str_replace(["&"], ["§"], Loader::getConfiguration("messages")->get("player_move_in_logout_time")));
 		}
-		$blockIdAt = $player->getLevel()->getBlockIdAt($player->x, $player->y, $player->z);
+		$blockIdAt = $player->getLevel()->getBlockIdAt((int)$player->x, (int)$player->y, (int)$player->z);
 		if(in_array($blockIdAt, Loader::getDefaultConfig("block_ids"))){
 			$player->changeWorld();
 		}

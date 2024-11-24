@@ -1083,7 +1083,7 @@ class Player extends \pocketmine\Player {
      * @param String $kitName
      */
     public function resetKitTime(String $kitName){
-        PlayerBase::setData($this->getName(), $kitName, time() + (4 * 3600));
+        PlayerBase::setData($this->getName(), $kitName, time() + (10 * 60));
     }
 
     /**

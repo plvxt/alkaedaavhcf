@@ -18,7 +18,7 @@ class FreezeTimeTask extends Task {
      * @param String $factionName
      * @param Int $time
      */
-    public function __construct(String $factionName, Int $time = 1800){
+    public function __construct(String $factionName, Int $time = 480){
         $this->factionName = $factionName;
         Factions::setFreezeTime($factionName, $time);
     }

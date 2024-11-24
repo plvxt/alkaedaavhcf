@@ -64,26 +64,47 @@ class KothTask extends Task {
                 Loader::getInstance()->getServer()->broadcastMessage(str_replace(["&", "{kothName}", "{playerName}"], ["§", $koth->getName(), $koth->getCapturer()->getName()], Loader::getConfiguration("messages")->get("koth_is_capturing")));
             }
         }
-        if($koth->getKothTime() === 0){
-            if(empty($koth->getCapturer())) return;
-            
-            $player = $koth->getCapturer();
-            
-            CrateManager::giveKey($koth->getCapturer(), "Koth", rand(1, 4));
+        if ($koth->getKothTime() === 0) {
+    if (empty($koth->getCapturer())) return;
+    
+    $player = $koth->getCapturer();
+    
+    CrateManager::giveKey($koth->getCapturer(), "Koth", rand(1, 20));
 
-            Loader::getInstance()->getServer()->broadcastMessage(str_replace(["&", "{kothName}", "{playerName}"], ["§", $koth->getName(), $koth->getCapturer()->getName()], Loader::getConfiguration("messages")->get("koth_is_captured")));
+    Loader::getInstance()->getServer()->broadcastMessage(
+        str_replace(
+            ["&", "{kothName}", "{playerName}"], 
+            ["§", $koth->getName(), $koth->getCapturer()->getName()], 
+            Loader::getConfiguration("messages")->get("koth_is_captured")
+        )
+    );
+    
+    $factionName = Factions::getFaction($koth->getCapturer()->getName());
+    if ($factionName !== null) {
+        Factions::addPoints($factionName, 25);
+    } else {
+        Loader::getInstance()->getServer()->broadcastMessage("El jugador no pertenece a ninguna facción.");
+    }
+
+    $message = $koth->getName() . " KOTH was captured by " . $koth->getCapturer()->getName();
+    Loader::getInstance()->getServer()->getAsyncPool()->submitTask(
+        new DiscordMessage(Loader::getDefaultConfig("URL"), $message, "KoTH")
+    );
+	
+    $player->sendTitle(
+        "§a¡Capturaste el KOTH!", // Título
+        "§7Tus recompensas serán agregadas al inventario", // Subtítulo
+        20, // Tiempo de aparición del título (en ticks)
+        60, // Tiempo que se mantiene el título (en ticks)
+        20  // Tiempo de desaparición del título (en ticks)
+    );
             
-            # Da los puntos al jugador que capturó el koth
-            Factions::addPoints(Factions::getFaction($koth->getCapturer()->getName()), 5);
-			
-            # Webhook to send the message to discord
-            $message = $koth->getName()." KOTH was captured by ".$koth->getCapturer()->getName();
-            Loader::getInstance()->getServer()->getAsyncPool()->submitTask(new DiscordMessage(Loader::getDefaultConfig("URL"), $message, "HCF | Koth Information"));        
-            $koth->setEnable(false);
-            Loader::getInstance()->getScheduler()->cancelTask($this->getTaskId());
-        }else{
-            $koth->setKothTime($koth->getKothTime() - 1);
-        }
+    $koth->setEnable(false);
+    Loader::getInstance()->getScheduler()->cancelTask($this->getTaskId());
+} else {
+    $koth->setKothTime($koth->getKothTime() - 1);
+}
+
     }
 }
 

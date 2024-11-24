@@ -752,34 +752,54 @@ class Factions {
         SQLite3Provider::getDataBase()->query("DELETE FROM spawns WHERE spawnName = '$spawnName';");
     }
     
-    public static function getSubclaim(\pocketmine\level\Position $position): ?string
-    {
-        [$x, $y, $z, $levelName] = [$position->getFloorX(), $position->getFloorY(), $position->getFloorZ(), $position->getLevel()->getName()];
-        $data = SQLite3Provider::getDataBase()->query("SELECT * FROM subclaims WHERE x = '$x' AND y = '$y' AND z = '$z' AND world = '$levelName';");
-        $result = $data->fetchArray(SQLITE3_ASSOC);
-        
-        if (empty($result))
-            return null;
-        return $result['owner'];
+  public static function getSubclaim(\pocketmine\level\Position $position): ?string
+{
+    [$x, $y, $z] = [(int) $position->getFloorX(), (int) $position->getFloorY(), (int) $position->getFloorZ()];
+    $levelName = $position->getLevel() !== null ? $position->getLevel()->getName() : null;
+
+    if ($levelName === null) {
+        return null; // El nivel no está disponible
     }
-    
-    public static function addSubclaim(string $owner, \pocketmine\level\Position $position): void
-    {
-        [$x, $y, $z, $levelName] = [$position->getFloorX(), $position->getFloorY(), $position->getFloorZ(), $position->getLevel()->getName()];
-        $data = SQLite3Provider::getDataBase()->prepare('INSERT INTO subclaims(x, y, z, world, owner) VALUES(:x, :y, :z, :world, :owner);');
-        $data->bindValue(':x', $x);
-        $data->bindValue(':y', $y);
-        $data->bindValue(':z', $z);
-        $data->bindValue(':world', $levelName);
-        $data->bindValue(':owner', $owner);
-        $data->execute();
+
+    $data = SQLite3Provider::getDataBase()->query("SELECT * FROM subclaims WHERE x = '$x' AND y = '$y' AND z = '$z' AND world = '$levelName';");
+    $result = $data->fetchArray(SQLITE3_ASSOC);
+
+    if (empty($result)) {
+        return null;
     }
-    
-    public static function removeSubclaim(\pocketmine\level\Position $position): void
-    {
-        [$x, $y, $z, $levelName] = [$position->getFloorX(), $position->getFloorY(), $position->getFloorZ(), $position->getLevel()->getName()];
-        SQLite3Provider::getDataBase()->query("DELETE FROM subclaims WHERE x = '$x' AND y = '$y' AND z = '$z' AND world = '$levelName';");
+    return $result['owner'];
+}
+
+public static function addSubclaim(string $owner, \pocketmine\level\Position $position): void
+{
+    [$x, $y, $z] = [(int) $position->getFloorX(), (int) $position->getFloorY(), (int) $position->getFloorZ()];
+    $levelName = $position->getLevel() !== null ? $position->getLevel()->getName() : null;
+
+    if ($levelName === null) {
+        throw new \InvalidArgumentException("La posición no tiene un mundo asignado.");
     }
+
+    $data = SQLite3Provider::getDataBase()->prepare('INSERT INTO subclaims(x, y, z, world, owner) VALUES(:x, :y, :z, :world, :owner);');
+    $data->bindValue(':x', $x);
+    $data->bindValue(':y', $y);
+    $data->bindValue(':z', $z);
+    $data->bindValue(':world', $levelName);
+    $data->bindValue(':owner', $owner);
+    $data->execute();
+}
+
+public static function removeSubclaim(\pocketmine\level\Position $position): void
+{
+    [$x, $y, $z] = [(int) $position->getFloorX(), (int) $position->getFloorY(), (int) $position->getFloorZ()];
+    $levelName = $position->getLevel() !== null ? $position->getLevel()->getName() : null;
+
+    if ($levelName === null) {
+        throw new \InvalidArgumentException("La posición no tiene un mundo asignado.");
+    }
+
+    SQLite3Provider::getDataBase()->query("DELETE FROM subclaims WHERE x = '$x' AND y = '$y' AND z = '$z' AND world = '$levelName';");
+}
+
     
     # Poner puntos a una faction (No suma)
     public static function setPoints(string $factionName, int $points): void

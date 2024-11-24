@@ -33,30 +33,31 @@ class EnderChestInventory extends \pocketmine\inventory\EnderChestInventory {
      * @param Player $player
      * @return void
      */
-    public function openInventory(Player $player) : void {
-        $position = new Position($player->x, $player->y + 5, $player->z, $player->getLevel());
+public function openInventory(Player $player) : void {
+    $position = new Position((int)$player->x, (int)($player->y + 5), (int)$player->z, $player->getLevel());
 
-        $this->holder = $position;
+    $this->holder = $position;
 
-        $nbt = new CompoundTag("", [
-            new StringTag(Tile::TAG_ID, Tile::CHEST),
-            new IntTag(Tile::TAG_X, $position->x),
-            new IntTag(Tile::TAG_Y, $position->y),
-            new IntTag(Tile::TAG_Z, $position->z),
-        ]);
-        $chest = Tile::createTile(Tile::ENDER_CHEST, $player->getLevel(), $nbt);
+    $nbt = new CompoundTag("", [
+        new StringTag(Tile::TAG_ID, Tile::CHEST),
+        new IntTag(Tile::TAG_X, (int)$position->x),
+        new IntTag(Tile::TAG_Y, (int)$position->y),
+        new IntTag(Tile::TAG_Z, (int)$position->z),
+    ]);
+    $chest = Tile::createTile(Tile::ENDER_CHEST, $player->getLevel(), $nbt);
 
-        $pk = new UpdateBlockPacket();
-        $pk->x = (int)$position->x;
-        $pk->y = (int)$position->y;
-        $pk->z = (int)$position->z;
-        $pk->flags = UpdateBlockPacket::FLAG_ALL;
-        $pk->blockRuntimeId = Block::get(Block::ENDER_CHEST)->getRuntimeId();
-        $player->dataPacket($pk);
+    $pk = new UpdateBlockPacket();
+    $pk->x = (int)$position->x;
+    $pk->y = (int)$position->y;
+    $pk->z = (int)$position->z;
+    $pk->flags = UpdateBlockPacket::FLAG_ALL;
+    $pk->blockRuntimeId = Block::get(Block::ENDER_CHEST)->getRuntimeId();
+    $player->dataPacket($pk);
 
-        $player->getEnderChestInventory()->setHolderPosition($chest);
-        $player->addWindow($player->getEnderChestInventory());
-    }
+    $player->getEnderChestInventory()->setHolderPosition($chest);
+    $player->addWindow($player->getEnderChestInventory());
+}
+
 }
 
 ?>

@@ -24,7 +24,7 @@ namespace libs\muqsit\invmenu\session\network\handler;
 use Closure;
 use libs\muqsit\invmenu\session\network\NetworkStackLatencyEntry;
 use pocketmine\network\mcpe\protocol\types\DeviceOS;
-
+use function mt_rand;
 final class PlayerNetworkHandlerRegistry{
 
 	/** @var PlayerNetworkHandler */
@@ -35,7 +35,8 @@ final class PlayerNetworkHandlerRegistry{
 
 	public static function init() : void{
 		self::registerDefault(new ClosurePlayerNetworkHandler(static function(Closure $then) : NetworkStackLatencyEntry{
-			return new NetworkStackLatencyEntry(mt_rand() * 1000 /* TODO: remove this hack */, $then);
+			$timestamp = mt_rand();
+			return new NetworkStackLatencyEntry($timestamp * 1000000, $then, $timestamp);
 		}));
 		self::register(DeviceOS::PLAYSTATION, new ClosurePlayerNetworkHandler(static function(Closure $then) : NetworkStackLatencyEntry{
 			$timestamp = mt_rand();

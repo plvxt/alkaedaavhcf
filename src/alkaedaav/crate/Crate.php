@@ -207,7 +207,7 @@ class Crate {
 			return false;
 		}
 		$position = new Vector3($this->getPosition()[0] + 0.5, $this->getPosition()[1] + 1, $this->getPosition()[2] + 0.5);
-		$this->setParticles(new FloatingTextParticle($position, "", $this->getNameFormat()."\n".TE::DARK_GRAY."-*-\n".TE::WHITE."Toca para abrir\n".TE::AQUA."buy.sandia.vip"));
+		$this->setParticles(new FloatingTextParticle($position, "", $this->getNameFormat()."\n".TE::DARK_GRAY."\n".TE::WHITE."Toca para abrir\n".TE::AQUA."buy.sandia.vip\n"));
 		foreach(Loader::getInstance()->getServer()->getOnlinePlayers() as $player){
 			$this->addParticles($player);
 		}

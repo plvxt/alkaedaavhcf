@@ -123,10 +123,10 @@ class Scoreboard extends Task {
         }
               $claim = TE::RED.$player->getRegion();
         if($player->getRegion() === Factions::getFaction($player->getName())){
-          $claim = TE::LIGHT_PURPLE.$player->getRegion();
+          $claim = TE::DARK_GREEN.$player->getRegion();
         }
         if($player->getRegion() === "Spawn"){
-          $claim = TE::LIGHT_PURPLE.$player->getRegion();
+          $claim = TE::DARK_GREEN.$player->getRegion();
         }
         $scoreboard[] = $config->get("hq_service") . $claim;
         
@@ -140,7 +140,7 @@ class Scoreboard extends Task {
             $scoreboard[] = TE::GRAY. " ";
             $texting = [TE::GRAY.TE::GRAY. $config->get("scoreb_lines") . TE::RESET];
 			$network = [TE::GRAY . $config->get("scoreb_lines") . TE::RESET];
-            $acme = [TE::GRAY . "  " . $config->get("server_ip") . TE::RESET];
+            $acme = [TE::GRAY . " " . $config->get("server_ip") . TE::RESET];
       	  $scoreboard = array_merge($texting, $scoreboard, $acme, $network);
         }else{
         	$api->removePrimary($player);

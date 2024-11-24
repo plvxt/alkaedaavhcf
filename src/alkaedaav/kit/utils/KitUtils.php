@@ -42,7 +42,7 @@ final class KitUtils
         $item->setCustomName($kit->getNameFormat());
         $item->setLore(array_map(function (mixed $text) use ($player, $kitName) {
             $player_cooldown_text = $player->getTimeKitRemaining($kitName) > time() ? Time::getTime($player->getTimeKitRemaining($kitName)) : 'N/D';
-            $kit_cooldown_text = Time::getTime(time() + (4 * 3600));
+            $kit_cooldown_text = Time::getTime(time() + (10 * 60));
             $new_text = str_replace(['{kit_cooldown}', '{player_cooldown}'], [$kit_cooldown_text, $player_cooldown_text], $text);
             return TextFormat::colorize($new_text);
         }, $data['item.kit.lore']));
@@ -89,7 +89,7 @@ final class KitUtils
                 
                 if (!$player->isGodMode()) {
                     if ($player->getTimeKitRemaining($kit->getName()) > time()) {
-                        $player->sendMessage(str_replace(["&", "{time}"], ["ยง", Time::getTime($player->getTimeKitRemaining($kit->getName()))], Loader::getConfiguration("messages")->get("function_cooldown")));
+                        $player->sendMessage(str_replace(["&", "{time}"], [">", Time::getTime($player->getTimeKitRemaining($kit->getName()))], Loader::getConfiguration("messages")->get("function_cooldown")));
                         return $transaction->discard();
                     }
                     $player->resetKitTime($kit->getName());

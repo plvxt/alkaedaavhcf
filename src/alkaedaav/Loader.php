@@ -73,9 +73,8 @@ class Loader extends PluginBase {
 ██████╔╝██║░░██║██║░╚███║██████╔╝██║██║░░██║░░╚██╔╝░░██║██║░░░░░
 ╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░
 
-               Plugin by nmoralesFZ
-             Discord: nmoralesFZ#2607
- Version: 3.0.1 - Github: nmoralesFZ/alkaedaavhcf
+				 alkaedaavhcf4 by plvxt
+		Version: 4.0.0 - Github: plvxt/alkaedaavhcf
                                                                 
 TAG;
         $this->getLogger()->info($msg);
@@ -108,9 +107,10 @@ TAG;
         $this->getScheduler()->scheduleRepeatingTask(new FactionTask(), 5 * 60 * 40);
         new TagPlayer();
 
-        $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load netherav");        
-		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load endav");
-		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load buildsav");
+        //$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load netherav");        
+		//$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load endav");
+		//$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "mw load buildsav");
+		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "say Test Passed!");
     }
     
     /**

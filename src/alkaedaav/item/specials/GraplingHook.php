@@ -19,6 +19,13 @@ class GraplingHook extends Custom {
         parent::__construct(self::FISHING_ROD, "Grapling Hook", [TE::GREEN.TE::BOLD."RARE ITEM".TE::RESET."\n\n".TE::GRAY."You Avanced 5 Blocks"]);
         $this->setNamedTagEntry(new CompoundTag(self::CUSTOM_ITEM));
     }
-}
 
+    /**
+     * Impide que el GraplingHook se apile
+     * @return int
+     */
+    public function getMaxStackSize() : int {
+        return 1; // No se apilará
+    }
+}
 ?>

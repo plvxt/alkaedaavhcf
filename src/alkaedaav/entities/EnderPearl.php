@@ -114,7 +114,7 @@ class EnderPearl extends Throwable {
 	public function isFence() : bool {
 		for($x = ((int)$this->x); $x <= ((int)$this->x); $x++){
 			for($z = ((int)$this->z); $z <= ((int)$this->z); $z++){
-				$block = $this->getLevel()->getBlockAt($x, $this->y, $z);
+				$block = $this->level->getBlockAt((int)$this->x, (int)$this->y, (int)$this->z);
 				if($block instanceof FenceGate){
 					return true;
 				}else{
