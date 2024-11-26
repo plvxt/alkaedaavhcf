@@ -81,7 +81,7 @@ class KothTask extends Task {
     
     $factionName = Factions::getFaction($koth->getCapturer()->getName());
     if ($factionName !== null) {
-        Factions::addPoints($factionName, 25);
+        Factions::addPoints($factionName, 50);
     } else {
         Loader::getInstance()->getServer()->broadcastMessage("El jugador no pertenece a ninguna facción.");
     }
