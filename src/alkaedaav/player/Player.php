@@ -1218,6 +1218,7 @@ class Player extends \pocketmine\Player {
                 $this->armorEffects[$this->getName()]["Archer"] = $this;
             }
             $this->addEffect(new EffectInstance(Effect::getEffect(Effect::FIRE_RESISTANCE), 240, 1));
+	    $this->addEffect(new EffectInstance(Effect::getEffect(Effect::RESISTANCE), 240, 3));
             $this->addEffect(new EffectInstance(Effect::getEffect(Effect::REGENERATION), 240, 1));
             $this->addEffect(new EffectInstance(Effect::getEffect(Effect::SPEED), 240, 2));
         }elseif($this->isRogueClass()){
@@ -1250,7 +1251,7 @@ class Player extends \pocketmine\Player {
             if(!isset($this->armorEffects[$this->getName()]["Ninja"])) {
                 $this->armorEffects[$this->getName()]["Ninja"] = $this;
             }
-            $this->addEffect(new EffectInstance(Effect::getEffect(Effect::RESISTANCE), 240, 1));
+            $this->addEffect(new EffectInstance(Effect::getEffect(Effect::RESISTANCE), 240, 3));
             $this->addEffect(new EffectInstance(Effect::getEffect(Effect::SPEED), 240, 1));
         } else {
             if(isset($this->armorEffects[$this->getName()]["Bard"])){
@@ -1261,7 +1262,7 @@ class Player extends \pocketmine\Player {
             if(isset($this->armorEffects[$this->getName()]["Archer"])){
                 $this->removeEffect(Effect::SPEED);
                 $this->removeEffect(Effect::REGENERATION);
-                $this->removeEffect(Effect::FIRE_RESISTANCE);
+	        $this->removeEffect(Effect::RESISTENCE);
                 unset($this->armorEffects[$this->getName()]["Archer"]);
             }
             if(isset($this->armorEffects[$this->getName()]["Rogue"])){
